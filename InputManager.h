@@ -4,5 +4,9 @@ class InputManager
 {
 public:
 	void HandleInput(const SDL_Event* e);
+	bool IsKeyDown(SDL_Scancode key);
+
+
+
 };
 

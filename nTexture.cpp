@@ -29,6 +29,18 @@ bool nTexture::Load(SDL_Renderer* renderer, const std::string& path) {
     return true;
 }
 
+int nTexture::GetWidth() const {
+    return width;
+}
+
+int nTexture::GetHeight() const {
+    return height;
+}
+
+SDL_Texture* nTexture::GetRawTexture() const {
+    return texture;
+}
+
 void nTexture::Draw(SDL_Renderer* renderer, int x, int y) {
     SDL_FRect dst = { (float)x, (float)y, (float)width, (float)height };
     SDL_RenderTexture(renderer, texture, nullptr, &dst);

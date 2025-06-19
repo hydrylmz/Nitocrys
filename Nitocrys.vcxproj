@@ -141,15 +141,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="EntityManager.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="nEntity.cpp" />
     <ClCompile Include="nTexture.cpp" />
     <ClCompile Include="nWindow.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="TimeManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EntityManager.h" />
     <ClInclude Include="InputManager.h" />
+    <ClInclude Include="nEntity.h" />
     <ClInclude Include="nTexture.h" />
     <ClInclude Include="nWindow.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="TimeManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

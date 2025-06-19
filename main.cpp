@@ -1,38 +1,41 @@
 #include "nWindow.h"
 #include "InputManager.h"
 #include "nTexture.h"
+#include "Player.h"
+#include "TimeManager.h"
 
 int main() {
     nWindow window;
-    nTexture player;
-
-
+    nTexture playerTex;
     InputManager inputManager;
+    TimeManager timeManager;
 
-    if (!window.Init()) {
-        return -1;
-    }
-    if (!player.Load(window.GetRenderer(), "Assets/Images/main.png")) {
-        return -1;
-    }
+    if (!window.Init()) return -1;
+
+    if (!playerTex.Load(window.GetRenderer(), "Assets/Images/main.png")) return -1;
+
+    Player player(&inputManager);
+    player.SetTexture(&playerTex);
+
     bool running = true;
     SDL_Event event;
 
     while (running) {
+        timeManager.Update();
+        float dt = timeManager.GetDeltaTime();
+
         while (SDL_PollEvent(&event)) {
-            if (event.type == SDL_EVENT_QUIT) {
+            if (event.type == SDL_EVENT_QUIT)
                 running = false;
-            }
             inputManager.HandleInput(&event);
         }
 
-        window.Clear();                  // Önce ekran temizlenir
-        player.Draw(window.GetRenderer(), 100, 100); // Sonra sprite çizilir
-        window.Present();                // Son olarak ekrana yansýtýlýr
+        player.Update(dt);
+
+        window.Clear();
+        player.Draw(window.GetRenderer());
+        window.Present();
     }
-
-
-    player.Unload();
 
     window.Shutdown();
     return 0;

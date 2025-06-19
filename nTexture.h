@@ -11,7 +11,12 @@ public:
     void Draw(SDL_Renderer* renderer, int x, int y);
     void Unload();
 
+    int GetWidth() const;
+    int GetHeight() const;
+    SDL_Texture* GetRawTexture() const;
+
 private:
     SDL_Texture* texture;
     int width, height;
+
 };

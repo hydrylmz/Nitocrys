@@ -25,6 +25,12 @@
     <Filter Include="Üst Bilgi Dosyaları\Special Classes">
       <UniqueIdentifier>{7e8ba80c-9429-4201-8a5f-4976b4318a2b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Kaynak Dosyalar\Entity Classes">
+      <UniqueIdentifier>{2c87fb83-2696-4648-b1e6-7ff4e9a4aa83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Üst Bilgi Dosyaları\Entity Classes">
+      <UniqueIdentifier>{94a6008f-6ecd-4f75-bf73-e9dc09830227}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -39,6 +45,18 @@
     <ClCompile Include="nTexture.cpp">
       <Filter>Kaynak Dosyalar\Special Classes</Filter>
     </ClCompile>
+    <ClCompile Include="nEntity.cpp">
+      <Filter>Kaynak Dosyalar\Special Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManager.cpp">
+      <Filter>Kaynak Dosyalar\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Kaynak Dosyalar\Entity Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityManager.cpp">
+      <Filter>Kaynak Dosyalar\Managers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InputManager.h">
@@ -49,6 +67,18 @@
     </ClInclude>
     <ClInclude Include="nTexture.h">
       <Filter>Üst Bilgi Dosyaları\Special Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="nEntity.h">
+      <Filter>Üst Bilgi Dosyaları\Special Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManager.h">
+      <Filter>Üst Bilgi Dosyaları\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Üst Bilgi Dosyaları\Entity Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityManager.h">
+      <Filter>Üst Bilgi Dosyaları\Managers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
