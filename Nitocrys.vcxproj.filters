@@ -13,10 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Kaynak Dosyalar\Managers">
+      <UniqueIdentifier>{69b08d33-3921-427b-bda2-291524a55ef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Üst Bilgi Dosyaları\Managers">
+      <UniqueIdentifier>{780d673f-5ac7-41a0-b2e9-4e3c11ce3240}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kaynak Dosyalar\Special Classes">
+      <UniqueIdentifier>{6c9feb24-c6d6-41fb-a280-4d42c1e8f17e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Üst Bilgi Dosyaları\Special Classes">
+      <UniqueIdentifier>{7e8ba80c-9429-4201-8a5f-4976b4318a2b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Kaynak Dosyalar</Filter>
     </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Kaynak Dosyalar\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="nWindow.cpp">
+      <Filter>Kaynak Dosyalar\Special Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="nTexture.cpp">
+      <Filter>Kaynak Dosyalar\Special Classes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="InputManager.h">
+      <Filter>Üst Bilgi Dosyaları\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="nWindow.h">
+      <Filter>Üst Bilgi Dosyaları\Special Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="nTexture.h">
+      <Filter>Üst Bilgi Dosyaları\Special Classes</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
